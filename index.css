@@ -56,4 +56,15 @@
   .mobile-signup {
     display: inline;
   }
+  .mobile-card{
+    /* display: none; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 90%;
+  }
+  .mobile-card-image{
+    height: 20px;
+    width: 20px;
+  }
 }
