@@ -22,7 +22,7 @@ const FormalContainer = () => {
           return (
             <div
               className="flex flex-col gap-4 bg-white h-[30rem] w-64 hover:drop-shadow-lg transform 
-              transition hover:scale-105"
+              transition hover:scale-105 "
             >
               <div className=" rounded-lg aspect-auto overflow-hidden ">
                 <img

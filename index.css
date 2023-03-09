@@ -23,4 +23,23 @@
   .mobile-cart {
     left: -100px;
   }
+  .mobile-categories {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .mobile-categories-h1{
+    margin-left: 97px;
+  }
+  .mobile-category-formal {
+    height: 12rem;
+    width: 25rem;
+  }
+  .mobile-category {
+    height: 12rem;
+    width: 12rem;
+  }
+  .mobile-category-font {
+    font-size: 20px;
+  }
 }
