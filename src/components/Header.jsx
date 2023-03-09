@@ -35,7 +35,7 @@ const Header = () => {
   };
 
   return (
-    <div className="h-12 p-2 flex items-center justify-between sticky top-0 z-50 bg-[#FFFFFF] shadow">
+    <div className="h-12 p-2 flex items-center justify-between sticky top-0 z-50 bg-[#FFFFFF] shadow mobile-header">
       <div className="ml-3">
         <Link to="/">
           <h1 className="font-bebas tracking-widest text-2xl sm:text-4xl">
@@ -43,7 +43,7 @@ const Header = () => {
           </h1>
         </Link>
       </div>
-      <div className="flex flex-row relative mr-20 ">
+      <div className="flex flex-row relative mr-20 mobile-header-right">
         <div className="absolute right-60">
           <Link to="/home">
             <HomeIcon className="h-8 w-8" />
@@ -76,7 +76,7 @@ const Header = () => {
           </div>
 
           {isOpenCart && (
-            <div className="absolute top-10 right-4 w-96 bg-white h-96 mt-1 flex flex-col shadow-2xl rounded-lg">
+            <div className="absolute top-10 right-4 w-96 bg-white h-96 mt-1 flex flex-col shadow-2xl rounded-lg mobile-cart">
               {cartItem.length === 0 ? (
                 <div className="flex flex-col justify-center text-center ">
                   <img
@@ -87,7 +87,7 @@ const Header = () => {
                 </div>
               ) : (
                 <>
-                  <div className="h-96 overflow-scroll">
+                  <div className="h-96 overflow-scroll ">
                     {cartItem.map((item) => {
                       return (
                         <div className="flex flex-col">
