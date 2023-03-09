@@ -31,7 +31,7 @@ const Login = () => {
   };
 
   return (
-    <div className="flex justify-between  h-[46.5rem]">
+    <div className="flex justify-between  h-[46.5rem] mobile-login ">
       <div className="flex flex-col w-3/5 text-center items-center m-14 p-14">
         <h1 className="font-bold font-bebas text-6xl">Login to your account</h1>
         <p className="font-roboto text-gray-400 mt-1 uppercase">
@@ -65,14 +65,14 @@ const Login = () => {
               placeholder="Email"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
-              className="h-12 w-full font-roboto bg-gray-100 p-4 rounded-full text-lg focus:outline-none"
+              className="h-12 w-full font-roboto bg-gray-100 p-4 rounded-full text-lg focus:outline-none mobile-login-input"
             />
             <input
               type="password"
               placeholder="Password"
               value={password}
               onChange={(e) => setPassword(e.target.value)}
-              className="h-12 w-full font-roboto bg-gray-100 p-4 rounded-full text-lg focus:outline-none"
+              className="h-12 w-full font-roboto bg-gray-100 p-4 rounded-full text-lg focus:outline-none mobile-login-input"
             />
             {error && <span className="-mt-8 "> {error} </span>}
             <button className="h-12 rounded-full bg-black text-white uppercase tracking-widest w-48 align-middle">
@@ -81,7 +81,15 @@ const Login = () => {
           </form>
         </div>
       </div>
-      <div className="bg-black w-4/12 rounded-tl-[6rem] rounded-bl-[6rem]">
+      <div className="absolute bottom-0 hidden mobile-signup">
+        <h1
+          className="font-roboto bg-black text-white uppercase p-1 rounded-xl
+        "
+        >
+          Sign-Up from Desktop or Login With GOOGLE
+        </h1>
+      </div>
+      <div className="bg-black w-4/12 rounded-tl-[6rem] rounded-bl-[6rem] mobile-login-signup">
         <div className="flex flex-col text-center items-center m-14 p-14">
           <h1 className="text-white text-6xl uppercase">New Here?</h1>
           <p className=" mt-4 text-sm text-gray-400 uppercase">
