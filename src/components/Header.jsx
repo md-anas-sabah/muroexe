@@ -35,10 +35,10 @@ const Header = () => {
   };
 
   return (
-    <div className="h-12 p-2 flex items-center justify-between sticky top-0 z-50 bg-[#FFFFFF] shadow ">
+    <div className="h-12 p-2 flex items-center justify-between sticky top-0 z-50 bg-[#FFFFFF] shadow">
       <div className="ml-3">
         <Link to="/">
-          <h1 className="font-bebas tracking-widest text-4xl sm:text-sm lg:bg-black">
+          <h1 className="font-bebas tracking-widest text-2xl sm:text-4xl">
             Muro<span className="font-bangers">exe</span>
           </h1>
         </Link>
