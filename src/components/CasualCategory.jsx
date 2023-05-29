@@ -4,7 +4,7 @@ const CasualCategory = () => {
   return (
     <div className="h-[22rem] w-[30rem] relative mobile-category">
       <img
-        src="https://cdn.luxe.digital/media/2021/10/07105650/best-casual-shoes-men-reviews-luxe-digital%402x.jpg"
+        src="https://5.imimg.com/data5/SELLER/Default/2022/5/JB/VG/ZR/91613985/new-stylish-black-canvas-sneakers-shoe-for-men-500x500.JPG"
         alt="formal-logo"
         className="absolute inset-0 bg-cover bg-center z-0 h-[22rem] w-[30rem] rounded-2xl mobile-category"
       />
